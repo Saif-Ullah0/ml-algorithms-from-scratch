@@ -94,3 +94,5 @@ class BaggingClassifier:
         )
         agreement = majority / self.n_estimators
         return float(1.0 - agreement.mean())  # higher = more disagreement = more variance
+    def score(self, X, y):
+        return float(sum(self.predict(X) == y) / len(y))
