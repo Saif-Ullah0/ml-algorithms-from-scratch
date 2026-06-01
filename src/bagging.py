@@ -97,3 +97,5 @@ class BaggingClassifier:
     def score(self, X, y):
         return float(sum(self.predict(X) == y) / len(y))
 # note: min_samples_split prevents overly small leaf nodes
+    def score(self, X, y):
+        return float(sum(self.predict(X) == y) / len(y))
