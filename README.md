@@ -1,6 +1,3 @@
 # ML Algorithms from Scratch
-- Added entropy helper notes
-- OOB error tracks validation accuracy
-- AdaBoost: alpha = 0.5 * ln((1-eps)/eps)
-- SVM margin = 2/||w||
-- Decision boundary: w.x + b = 0
+Ensemble learning implemented from scratch: Bagging, Random Forest, AdaBoost
+Seed: 065 | Roll: BSCS23065 | ITU Lahore
