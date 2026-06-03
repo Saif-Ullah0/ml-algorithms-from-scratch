@@ -115,3 +115,5 @@ class RandomForestClassifier:
     def score(self, X, y):
         return float(sum(self.predict(X) == y) / len(y))
 # TODO: add predict_proba for soft voting in future
+    def score(self, X, y):
+        return float(sum(self.predict(X) == y) / len(y))
