@@ -112,3 +112,5 @@ class RandomForestClassifier:
         for feat_idx in self.feature_subsets_:
             counts[feat_idx] += 1
         return counts
+    def score(self, X, y):
+        return float(sum(self.predict(X) == y) / len(y))
