@@ -104,3 +104,5 @@ class AdaBoostClassifier:
         """Yield predictions after each boosting round."""
         for i in range(1, len(self.estimators_) + 1):
             yield self._predict_from(X, i)
+    def score(self, X, y):
+        return float(sum(self.predict(X) == y) / len(y))
