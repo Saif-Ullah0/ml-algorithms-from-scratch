@@ -110,3 +110,5 @@ class AdaBoostClassifier:
 # eps clipped to (1e-10, 1-1e-10) to prevent log(0)
     def score(self, X, y):
         return float(sum(self.predict(X) == y) / len(y))
+# fix: handle edge case when all weights collapse to single sample
+# eps clipped to (1e-10, 1-1e-10) to prevent log(0)
