@@ -1,5 +1,6 @@
-# ignore
 __pycache__/
 *.pyc
 report_assets/
 *.zip
+*.docx
+.env
