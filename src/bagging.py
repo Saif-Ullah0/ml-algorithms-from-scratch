@@ -96,3 +96,4 @@ class BaggingClassifier:
         return float(1.0 - agreement.mean())  # higher = more disagreement = more variance
     def score(self, X, y):
         return float(sum(self.predict(X) == y) / len(y))
+# note: min_samples_split prevents overly small leaf nodes
